@@ -4,7 +4,7 @@ This project is an unplugged basic exploratory data analysis.
 
 ## Classroom Highlights 
 This exemplar demonstrates: 
-1. Unplugged Data Science
+1. Unplugged 🔌 Data Science 
 2. Interactive isualization
 3. Interactive *and* adaptive visualization
 4. Emerging visualization (map)
