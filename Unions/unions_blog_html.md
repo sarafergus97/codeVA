@@ -14,12 +14,6 @@ This exemplar demonstrates:
 
 This project attempts to address the aesthetic perspective of [disruption](http://www.animatingdemocracy.org/sites/default/files/pictures/AestPersp/pdfs/Aesthetics%20Short%20Take.pdf) by providing insight on a topic that many Virginians do not know a lot about (being that unions are, officially, illegal in the state). 
 
-### A Null Result
-Many students will choose to explore relationships that do not actually exist (sometimes, this will be painfully clear to you before your student even starts). This example helps to communicate to students that a weak realationships still provide insight and inquiry, and that they should not be afraid to investigate ideas they do not already know about. 
-
-### Controversial Issues
-Officially, unions are illegal in Virginia. So, the topic of unions is very political and relativley controversial. Should I let my students explore a contraversial topic like this? *Absolutley*. I encourage students to study anything they are interested in, and in my experience, they are often interested in political/controversial ideas (racism, enviornmental issues, LGBT+ issues, ...). This requires some closer faciliatation and some more discussion, but is absolutley possible and, personally, encouraged. I expand on this more in [my post on faciliating projects on controversial topics.](link) 
-
 ## The Project
 
 In this project, I explore labor unions using data from the wage data of [Measure of America](https://measureofamerica.org/). I explored the relationships between a states percent of union participation and other measures of well-being. To start, I visualized unions in the country using an *emerging visualization*, a geographic map. 
@@ -43,6 +37,14 @@ In my write up, I attempted to reconcile the lack of concrete findings in this r
 Answering "no" to any of those questions doesn't make this a bad project, it just teaches the process of data analysis and encourages students to think critically. Whether the answer to those questions are yes or no, I always encourage students to ask questions based on their results and consider where differences may come from, both on their own and formally in a write-up.
 
 You can see the whole CODAP document [here](https://codap.concord.org/app/static/dg/en/cert/index.html#shared=https%3A%2F%2Fcfm-shared.concord.org%2F70tjQ9UEmM3u8VsN0cP0%2Ffile.json). You can check out the whole report here.
+
+## Teaching Notes
+
+### A Null Result
+Many students will choose to explore relationships that do not actually exist (sometimes, this will be painfully clear to you before your student even starts). This example helps to communicate to students that a weak realationships still provide insight and inquiry, and that they should not be afraid to investigate ideas they do not already know about. 
+
+### Controversial Issues
+Officially, unions are illegal in Virginia. So, the topic of unions is very political and relativley controversial. Should I let my students explore a contraversial topic like this? *Absolutley*. I encourage students to study anything they are interested in, and in my experience, they are often interested in political/controversial ideas (racism, enviornmental issues, LGBT+ issues, ...). This requires some closer faciliatation and some more discussion, but is absolutley possible and, personally, encouraged. I expand on this more in [my post on faciliating projects on controversial topics.](link) 
 
 ### Off-Task or Critical Thinking?
 My data questioning led me to an interesting side question: what is the spread of earnings by race and gender? [CODAP](https://codap.concord.org/) allowed me to briefly explore that idea. 
