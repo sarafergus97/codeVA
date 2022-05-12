@@ -13,7 +13,7 @@ This exemplar demonstrates:
 
 In this project, I address the aesthetic perspective of [disruption](http://www.animatingdemocracy.org/sites/default/files/pictures/AestPersp/pdfs/Aesthetics%20Short%20Take.pdf) by taking a critical look at required reading curriculum. 
 
-
+## The Project
 
 In this project, I explored the demographics of common required reading books and their authors. In the classroom, a student might choose to do something like this based on their school's required reading lists. This is particulary cool, since placing Data Science in a local context helps students to engage with the material through [place-based learning](https://www.edutopia.org/practice/place-based-learning-connecting-kids-their-community#:~:text=Place%2Dbased%20learning%20engages%20students,their%20work%20in%20their%20community.). In my case, I just used a contrived list of common required reading (They were books shelved as "required reading" on GoodReads). 
 
