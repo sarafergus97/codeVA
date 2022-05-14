@@ -108,8 +108,8 @@ print("Making word clouds...")
 make_word_cloud(dem_tweets, "Democrats\n")
 make_word_cloud(rep_tweets, "Republicans\n")
 #Word Clouds: Excluse most common in other party
-make_word_cloud(dem_tweets, "Unique to Democrats\n", just_words_rep[:500])
-make_word_cloud(rep_tweets, "Unique to Republicans\n", just_words_dem[:500])
+make_word_cloud(dem_tweets, "Unique to Democrats\n", just_words_rep)
+make_word_cloud(rep_tweets, "Unique to Republicans\n", just_words_dem)
 
 #Bar Graph
 print("Making bar graph...")
@@ -124,5 +124,5 @@ count_df = count_df.sort_values(by = ["total"], ascending = False)
 print("implementing search...")
 just_words_dem = [word.lower() for word in just_words_dem]
 just_words_rep = [word.lower() for word in just_words_rep]
-search("gun", most_common_dem, "democrats")
-search("gun", most_common_rep, "republicans")
+search("Trump", most_common_dem, "democrats")
+search("Trump", most_common_rep, "republicans")

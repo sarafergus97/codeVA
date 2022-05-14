@@ -16,6 +16,21 @@ In this project, I address the aesthetic perspective of...
 
 In this project, I used a dataset of tweets by various members of Congress, sorted by party (I got the tweets from [Kaggle](https://www.kaggle.com/datasets/kapastor/democratvsrepublicantweets)). My goal was to visualize what words politicans used in their tweets, and how those words were different based on the politician's political party. 
 
+First, I used an emerging visualization (a word cloud) to represent the words used by politican's of a particular party. I did this using all words first, then using words which were "unique" to the party. (see the "Data Decisions" part of this post for what I mean by "unique"). This is a great emerging visualization to show students, because it practices proportional thinking and is not difficult to make in Python using the `wordcloud` library. 
+
+Common words used by Democrats:
+![Common Words used by Democrats](democrat_words.png)
+![Unique Words used by Democrats](democrat_unique.png)
+
+Common words used by Republicans:
+![Common Words used by Republicans](republican_words.png)
+![Unique Words used by Republicans](republican_unique.png)
+
+I then visualized the words in a more traditional way, a stacked bar chart using Pythons `matplotlib` library. This visualization brings focus to the words which are commonly used by politicans in general, while the previous visualization considered words primarily in the context of political party. 
+
+![Stacked Bar Chart: Words used by US Politicians](words_500common.png)
+
+
 An interesting adaptation of this project may be to localize the issues by, for example, examining the tweets of more local politicans.
 
 ### Python Libraries
@@ -38,12 +53,12 @@ and this is created excluding the 500 most common words:
 One may come to very different conclusions based on the data decision made here. Note, for example, that "house", which could be politically meaningful, is included in the first plot, but not the second.
 
 For another example, these are the most common words in tweets by Republicans (excluding the 500 most common words):
-![Common words used by Repbulicans](rep_all.png)
+![Common words used by Democrats](democrat_words.png)
 
 And these are the most common "unique" to Republicans excluding the 1000 most common Democratic words:
 
-![Common words used by Republicans and not Used by Democrats (top 1000 Democrats)](rep_1000unique.png)
-Again, very different conclusins can be drawn based on a seemingly small data decision. You see the same sorts of changes when looking at the Democrats' words.
+![Common words used by Democrats and not Used by Republicans (top 1000 Republican Words)](democrat_unique.png)
+Again, very different conclusins can be drawn based on a seemingly small data decision. You see the same sorts of changes when looking at the Democrats' words. You can see, for example, that one cloud emphasizes Democrats talking about "Trump", while the other does not.
 
 While there are ways to optimize these decisions, I tend to only have students consider them informally at the k-12 level.
 
