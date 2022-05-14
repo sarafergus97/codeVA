@@ -68,6 +68,7 @@ def make_bar_graph(count_df):
     plt.bar(count_df["word"], count_df["dem count"], color = "blue")
     plt.bar(count_df['word'], count_df["rep count"],  bottom = count_df["dem count"], color = "red")
     plt.xticks(rotation = "vertical")
+    plt.subplots_adjust(bottom=0.3)
     plt.title("Common Word Frequency by Party")
     plt.ylabel("Number of Uses")
     plt.legend(["Democrat Frequency", "Republican Frequency"])
@@ -81,6 +82,7 @@ tweets = pd.read_csv('Tweets/ExtractedTweets.csv')
 
 ####### PREPARE DATA #######
 too_common = list(english_words['word'][:INCLUDE_COMMON])
+too_common = [i for i in too_common if type(i)==str]
 stop_words = ["https", "co", "RT", 'amp', '&amp;', 'http', 'thanks'] + too_common
 
 tweets["Tweet"] =tweets["Tweet"].str.replace('[^\w\s]','')
@@ -106,8 +108,8 @@ print("Making word clouds...")
 make_word_cloud(dem_tweets, "Democrats\n")
 make_word_cloud(rep_tweets, "Republicans\n")
 #Word Clouds: Excluse most common in other party
-make_word_cloud(dem_tweets, "Unique to Democrats\n", just_words_rep)
-make_word_cloud(rep_tweets, "Unique to Republicans\n", just_words_dem)
+make_word_cloud(dem_tweets, "Unique to Democrats\n", just_words_rep[:500])
+make_word_cloud(rep_tweets, "Unique to Republicans\n", just_words_dem[:500])
 
 #Bar Graph
 print("Making bar graph...")
@@ -116,7 +118,7 @@ data = build_df(data, most_common_dem, most_common_rep, "dem count", "rep count"
 data = build_df(data, most_common_rep, most_common_dem, "rep count", "dem count")
 count_df = pd.DataFrame(data) 
 count_df = count_df.sort_values(by = ["total"], ascending = False)
-make_bar_graph(count_df)
+#make_bar_graph(count_df)
 
 #Search a word
 print("implementing search...")
