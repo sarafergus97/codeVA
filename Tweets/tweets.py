@@ -105,11 +105,11 @@ just_words_rep = [val[0] for val in most_common_rep]
 ####### FUNCTION CALLS #######
 print("Making word clouds...")
 #Word Clouds: Basic
-make_word_cloud(dem_tweets, "Democrats\n")
-make_word_cloud(rep_tweets, "Republicans\n")
+#make_word_cloud(dem_tweets, "Democrats\n")
+#make_word_cloud(rep_tweets, "Republicans\n")
 #Word Clouds: Excluse most common in other party
-make_word_cloud(dem_tweets, "Unique to Democrats\n", just_words_rep)
-make_word_cloud(rep_tweets, "Unique to Republicans\n", just_words_dem)
+#make_word_cloud(dem_tweets, "Unique to Democrats\n", just_words_rep)
+#make_word_cloud(rep_tweets, "Unique to Republicans\n", just_words_dem)
 
 #Bar Graph
 print("Making bar graph...")
@@ -126,3 +126,7 @@ just_words_dem = [word.lower() for word in just_words_dem]
 just_words_rep = [word.lower() for word in just_words_rep]
 search("Trump", most_common_dem, "democrats")
 search("Trump", most_common_rep, "republicans")
+
+try_all = Counter(" ".join(tweets["Tweet"]).split()).most_common(NUM_WORDS)
+try_all = sift(try_all)
+print(try_all[:10])
