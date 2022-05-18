@@ -1,6 +1,6 @@
 # Political Tweets 🐦
 This project is python-based exploratory data analysis.
-*#python #data_cycle #data_science  #emerging-visualization*
+*#python #data_cycle #data_science  #emerging-visualization #coherence*
 
 ## Classroom Highlights 
 This exemplar demonstrates: 
@@ -30,7 +30,7 @@ I then visualized the words in a more traditional way, a stacked bar chart using
 
 An interesting adaptation of this project may be to localize the issues by, for example, examining the tweets of more local politicans.
 
-You can see my full report here and my Python code [here](tweets.py).
+You can see my full report [here](report.md) and my Python code [here](tweets.py).
 
 ### Python Libraries
 An advantage of Data Science in Python is the many libraries available to use. Often, difficult tasks (such as counting word occurances or creating word clouds) can be simplified using a library. When teaching basic Data Science in Python, I always spend a lot of time training my students to look for and use resources. I explicitly teach students what to google (always include the word "Python"!) and what resources are commonly good to use ([docs.python](https://docs.python.org/3/), [stackoverflow](https://stackoverflow.com/), [w3schools](https://www.w3schools.com/), [geeksforgeeks](https://www.geeksforgeeks.org/), [github](https://github.com/), and others) We start with using the `random` library at the very beginning of the year, when I answer almost every question with "I don't know, did you look at the [documentation](https://docs.python.org/3/library/random.html)?". While this is often met with eye rolls, it communicates to students the importance of using resources, and the idea that you don't need to know everything to be a good programmer. The best programmers are not those who can create everything on their own or know every command, but rather those who can find resources and make sense of documentation. Professional programmers almost always have a documentation tab and a [stackoverflow](https://stackoverflow.com/) tab open.

@@ -112,6 +112,7 @@ print("Making word clouds...")
 #make_word_cloud(rep_tweets, "Unique to Republicans\n", just_words_dem)
 
 #Bar Graph
+'''
 print("Making bar graph...")
 data = {"word": [], "dem count": [], "rep count": [], "total": []}
 data = build_df(data, most_common_dem, most_common_rep, "dem count", "rep count")
@@ -130,3 +131,9 @@ search("Trump", most_common_rep, "republicans")
 try_all = Counter(" ".join(tweets["Tweet"]).split()).most_common(NUM_WORDS)
 try_all = sift(try_all)
 print(try_all[:10])
+'''
+
+for item in dem_tweets["Tweet"]:
+    if "republicans" in item:
+        print(item)
+        print()
